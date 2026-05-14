@@ -1,0 +1,23 @@
+[project]
+name = "samuel-python-cosine-sim"
+version = "0.1.0"
+description = "Naive cosine similarity search — a CodSpeed demo baseline."
+readme = "README.md"
+authors = [
+    { name = "SuperMuel", email = "69467005+SuperMuel@users.noreply.github.com" }
+]
+requires-python = ">=3.13"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "numpy>=2.0",
+    "pytest>=8.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.11.2,<0.12.0"]
+build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
