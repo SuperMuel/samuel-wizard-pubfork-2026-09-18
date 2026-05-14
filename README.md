@@ -1,7 +1,6 @@
 # samuel-python-cosine-sim
 
-A naive pure-Python cosine similarity search. The deliberately slow
-baseline for an upcoming CodSpeed demo.
+A pure-Python cosine similarity search.
 
 ```bash
 uv sync

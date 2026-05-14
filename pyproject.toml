@@ -1,7 +1,7 @@
 [project]
 name = "samuel-python-cosine-sim"
 version = "0.1.0"
-description = "Naive cosine similarity search — a CodSpeed demo baseline."
+description = "Cosine similarity search."
 readme = "README.md"
 authors = [
     { name = "SuperMuel", email = "69467005+SuperMuel@users.noreply.github.com" }
