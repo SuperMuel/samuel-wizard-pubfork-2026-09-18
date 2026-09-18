@@ -30,6 +30,9 @@ def top_k_similar(
     """
     if k < 0:
         raise ValueError("k must be non-negative")
-    scores = [(i, cosine_similarity(query, doc)) for i, doc in enumerate(docs)]
+    query_norm = norm(query)
+    if query_norm == 0.0:
+        return []
+    scores = [(i, dot(query, doc) / (query_norm * norm(doc))) for i, doc in enumerate(docs)]
     scores.sort(key=lambda pair: pair[1], reverse=True)
     return scores[:k]
